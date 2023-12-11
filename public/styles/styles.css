@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    
+    padding: 0;
+    font-family: 'Patua One', serif;
+    
+    
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    
+    font-size: 20pt;
+    flex: auto;
+    justify-content: space-between;
+    color: #BBAB8C;
+    background-color: #FDF7E4;
+}
+    
+.nav-big-title{
+    height: 100%;
+    font-size: 35px;
+}    
+
+
+.nav-menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+a{
+    
+    text-decoration: none;
+    color: #BBAB8C;
+    padding: 0 10px;
+    border: 10px #FAEED1 solid;
+    border-radius: 20%;
+}
+
+
+#main{
+    display: flex;
+    padding: 20px;
+    height: 70vh;
+    width: 100%;
+    background-image: url("../images/todoback.jpg");
+    background-size: 100%;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: center;
+    
+    
+    
+}
+.heading{
+    
+    font-size: 4rem ;
+    padding : 20px 0;
+    color: aliceblue !important;
+    text-align: center;
+}
+
+
+
+
+.footer{
+    background-color: #FDF7E4;
+    color: #BBAB8C;
+    font-size: 15pt;
+    padding: 30px;
+    height: 10vh;
+    text-align: center;
+    width: auto
+    
+}
+
+.information{
+    height: 70vh;
+    width: 100%;
+    background-image: url("../images/todoback.jpg");
+    background-size: 100%;
+    color: aliceblue;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2{
+    font-size: 20pt ;
+    text-align: center;
+
+}
+.background-color{
+    width: 50%;
+    background-color: #00000080;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50vh;
+    
+}
+
+.container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    overflow: auto;
+    display: block;
+}
+.info{
+    font-size: 15pt;
+    height: 30px;
+    border: 5px #BBAB8C solid;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+
+    
+}
+
+.button{
+    height: 30px;
+    width: 30px;
+    font-size: x-large;
+    
+    
+}
+
+.check{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+   *{
+      /* font-size: 15pt; */
+      
+    }
+    .nav-container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: x-large !important;
+        
+    }
+    .nav-menu{
+        display: flex;
+        gap: 15px;
+        
+    }
+    
+    #main{
+        display: block;
+        
+        width: 100%;
+    }
+    
+    .heading{
+        font-size: 2.5rem;
+    }
+    .h2{
+        font-size: 1.5rem;
+    }
+    .background-color{
+        width: 70%;
+        height: 60%
+    }
+    .footer{
+        width: auto;
+        height: auto;
+    }
+  }

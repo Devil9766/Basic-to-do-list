@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+
+        <div class="information">
+            <h1 class="heading">Write your List-Items:</h1>
+            <h2>Today's Date is : <%= locals.newDay %>,  <%= new Date().getDate() %>/<%= locals.newMonth %>/<%= new Date().getFullYear(); %> </h2>
+
+            <div class="background-color">
+
+                <form action="/today" method="POST">
+                    <input class="info" type="text" name="today1" placeholder="write something..." required>
+                    <input class="button" type="submit" value="+"> <br>
+                </form> 
+                <div class="container"> 
+                    <% for(var i  = 0; i < d2.length ; i++) {%>
+                        <input class="check" type="checkbox" class="dayList"><label><%= d2[i] %></label><br>
+                    <% } %>
+                </div>      
+                
+            </div>
+
+            
+        </div>
+        
+        
+
+<%-include("partials/footer.ejs") %>
