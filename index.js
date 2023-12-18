@@ -50,7 +50,6 @@ app.get("/work" , (req , res) =>{
 
 app.get("/today" , (req , res) =>{
 
-   
     res.render("today.ejs" , {
         newDay : day ,
         newMonth : month,
